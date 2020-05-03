@@ -8,7 +8,10 @@ def mergeSort(array):
 		mergeSort(R_side)
 
 		i = j = k = 0
-
+# Remember that while loops are with lengths of both sides first combined and the seperated
+# Change with array takes place with k varible
+# L_side uses i variable and R_side uses j variabe
+# With every loop increment the variables it uses and in the end increment the k variable
 		while i < len(L_side) and j < len(R_side):
 			if L_side[i] < R_side[j]:
 				array[k] = L_side[i]
