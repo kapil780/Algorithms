@@ -14,7 +14,7 @@ def binarySearch(array, key):
         elif array[mid] > key:  # If key is less than middle element then look in the 1st half
             r = mid - 1
         else:
-            return mid  # If key is equal to middle element return the address
+            return mid  # If key is equal to middle element return the posotion
     return -1  # If element is not present return -1
 
 
