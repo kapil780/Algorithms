@@ -1,6 +1,6 @@
 # Works in sorted array
 # If two same elements are present then it returns the address of first element
-arr = [1, 1.5, 2, 3, 4, 5, 6, 7]
+arr = [1, 2, 3, 5, 6, 7]
 
 
 def binarySearch(array, key):
@@ -14,8 +14,8 @@ def binarySearch(array, key):
         elif array[mid] > key:  # If key is less than middle element then look in the 1st half
             r = mid - 1
         else:
-            return mid  # If key is equal to middle element return the posotion
-    return -1  # If element is not present return -1
+            return array[mid]  # If key is equal to middle element return the posotion
+    return z  # If element is not present return -1
 
 
-print(binarySearch(arr, 1.5))
+print(binarySearch(arr, 4))
