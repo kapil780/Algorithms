@@ -3,10 +3,10 @@ def lis(arr):
     temp_arr = [1] * n
     for i in range(1, n):
         for j in range(i):
-            if arr[i] > arr[j] and temp_arr[i] < temp_arr[j] + 1:
-                temp_arr[i] = temp_arr[j] + 1
+            if arr[i] > arr[j]:
+                temp_arr[i] = max(temp_arr[i], temp_arr[j] + 1)
     return(max(temp_arr))
 
 
-m = lis([3, 4, -1, 0, 6, 2, 3])
+m = lis([10, 22, 9, 33, 21, 50, 41, 60])
 print(m)
