@@ -1,5 +1,5 @@
-# Works in sorted array
-# If two same elements are present then it returns the address of first element
+# # Works in sorted array
+# # If two same elements are present then it returns the address of first element
 arr = [1, 2, 3, 5, 6, 7]
 
 
