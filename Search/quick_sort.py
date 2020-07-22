@@ -16,7 +16,7 @@ def partition(arr, left, right):
             i += 1
             (arr[i], arr[j]) = (arr[j], arr[i])
     (arr[i + 1], arr[right]) = (arr[right], arr[i + 1])
-    return i + 1  # Now the pivot is in the right place so return it's position
+    return i + 1  # Now pivot is in the right place so return it's position
 
 
 quickSort(arr, 0, len(arr) - 1)

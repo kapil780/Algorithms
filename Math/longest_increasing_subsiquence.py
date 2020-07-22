@@ -5,6 +5,7 @@ def lis(arr):
         for j in range(i):
             if arr[i] > arr[j]:
                 temp_arr[i] = max(temp_arr[i], temp_arr[j] + 1)
+                
     return(max(temp_arr))
 
 
